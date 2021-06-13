@@ -1,15 +1,29 @@
 body {
   background: black;
   margin: 0;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.container {
+#container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 700px;
+}
+
+.square {
+  background-color: #1d1d1d;
+  box-shadow: 0 0 2px black;
+  margin: 2px;
+  width: 16px;
+  height: 16px;
+  transition: 2s ease;
+}
+
+.square:hover {
+  transition-duration: 0.2s;
 }
