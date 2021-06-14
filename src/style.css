@@ -4,15 +4,34 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  font-family: "Bungee Hairline", cursive;
 }
 
 h1 {
-  font-family: "Bungee Hairline", cursive;
-  font-size: 90px;
-  text-align: center;
-  letter-spacing: 25px;
+  font-size: 70px;
+  line-height: 70px;
+  text-align: right;
+  letter-spacing: 15px;
   color: #ffffff;
-  margin-top: -25px;
+  margin: -25px -10px 10px 0;
+  opacity: 75%;
+}
+
+footer {
+  font-size: 10px;
+  color: #ffffff;
+  text-align: right;
+  margin-right: 11px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #a3f7bf;
 }
 
 #container {
@@ -20,15 +39,16 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1100px;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 .square {
   background-color: #444444;
   box-shadow: 0 0 2px #000;
   margin: 2px;
-  width: 16px;
-  height: 16px;
+  width: 25px;
+  height: 25px;
   transition: 2s ease;
 }
 
