@@ -1,10 +1,18 @@
 body {
-  background: black;
-  margin: 0;
-  height: 100vh;
+  background: #1c1c1c;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Bungee Hairline", cursive;
+  font-size: 90px;
+  text-align: center;
+  letter-spacing: 25px;
+  color: #ffffff;
+  margin-top: -25px;
 }
 
 #container {
@@ -12,12 +20,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 700px;
+  max-width: 1100px;
 }
 
 .square {
-  background-color: #1d1d1d;
-  box-shadow: 0 0 2px black;
+  background-color: #444444;
+  box-shadow: 0 0 2px #000;
   margin: 2px;
   width: 16px;
   height: 16px;
@@ -25,5 +33,5 @@ body {
 }
 
 .square:hover {
-  transition-duration: 0.2s;
+  transition-duration: 0s;
 }

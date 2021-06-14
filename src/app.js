@@ -1,31 +1,30 @@
-let container = document.getElementById("container");
-let colors = ["#f35588", "#05dfd7", "#a3f7bf", "#fff591", "#9672F3"];
-let SQUARE_NR = 700;
+const container = document.getElementById("container");
+const colors = ["#f35588", "#05dfd7", "#a3f7bf", "#fff591", "#9672F3"];
+const SQUARES_NR = 1540;
 
-// mouseover events
-for (let i = 0; i < SQUARE_NR; i++) {
-  let square = document.createElement("div");
+for (let i = 0; i < SQUARES_NR; i++) {
+  const square = document.createElement("div");
   square.classList.add("square");
 
   square.addEventListener("mouseover", () => {
-    setColorTo(square);
+    setColorToEl(square);
   });
 
   square.addEventListener("mouseout", () => {
-    removeColorFrom(square);
+    removeColorFromEl(square);
   });
 
   container.appendChild(square);
 }
-// randomizer
-function setColor(element) {
-  let color = getRandomColor();
+
+function setColorToEl(element) {
+  const color = getRandomColor();
   element.style.background = color;
   element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`;
 }
 
-function removeColor(element) {
-  element.style.background = "#252a2b";
+function removeColorFromEl(element) {
+  element.style.background = "#444444";
   element.style.boxShadow = `0 0 2px #000`;
 }
 
